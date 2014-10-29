@@ -106,38 +106,6 @@ blockquote p {
 
 
 
-
-// -----------------------------
-// #Feature
-// -----------------------------
-
-
-.feature-wrapper {
-
-	.widget.feature {
-		height: 700px;
-
-
-		.feature-bgimg {
-			height: 700px;
-
-			@media @tablet {
-				height: auto;
-			}
-		}
-
-		.content {
-			text-align: center;
-		}
-
-	}
-
-}
-
-
-
-
-
 // -----------------------------
 // #Super Header
 // -----------------------------
@@ -167,6 +135,10 @@ blockquote p {
 	padding: 2px 20px;
 	font-style: italic;
 
+	@media @mobile {
+		border-right: 0;
+	}
+
 	&:last-child {
 			border-right: 0;
 		}
@@ -186,6 +158,43 @@ blockquote p {
 
 
 // -----------------------------
+// #Feature
+// -----------------------------
+
+
+.feature-wrapper {
+
+	.widget.feature {
+		height: 700px;
+
+		h2 {
+			@media @mobile {
+				line-height: @font-swatch9-line-height;
+			}
+		}
+
+
+		.feature-bgimg {
+			height: 700px;
+
+			@media @tablet {
+				height: auto;
+			}
+		}
+
+		.content {
+			text-align: center;
+		}
+
+	}
+
+}
+
+
+
+
+
+// -----------------------------
 // #Header
 // -----------------------------
 
@@ -195,6 +204,8 @@ blockquote p {
 .company-info {
 	position: absolute;
 	z-index: 1;
+	width: 100%;
+	text-align: center;
 
 	top: 20%;
 	left: 50%;
@@ -203,8 +214,9 @@ blockquote p {
 	-moz-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
-	@media @tablet {
-		width: 90%;
+
+	@media @mobile {
+		top: 30%;
 	}
 }
 
@@ -257,6 +269,9 @@ blockquote p {
 	width: 60%;
 	margin: 0 auto;
 	margin-top: -20px;
+	@media @tablet {
+		width: 100%;
+	}
 }
 
 
@@ -294,15 +309,81 @@ blockquote p {
 // The mobile nav icon
 
 .widget .extendednavigation a.pull {
-	top: -28px;
-	height: 30px;
-	width: 30px;
-	margin-top: 4px;
+    display: none;
+    @media @tablet {
+        background-color: @color-swatch2;
+		border: 1px solid fade(@color-swatch1, 20%);
+		.border-radius(6px);
+		padding: 11px 9px 0;
+		position: absolute;
+		display: inline-block;
+		width: 42px;
+		height: 38px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,0%);
+		-webkit-transform: translate(-50%,0%);
+		-moz-transform: translate(-50%,0%);
+		-o-transform: translate(-50%,0%);
+		-ms-transform: translate(-50%,0%);
+		overflow: hidden;
+		cursor: pointer;
+		outline: none;
+		.transition( all, 0.5s, ease);
+        &:hover {
+           cursor: pointer;
+           background-color: lighten(@color-swatch2, 20%);
+			border: 1px solid fade(@color-swatch1, 30%);
+			.transition( all, 0.5s, ease);
+        }
+        &:after, &:before {
+            content: '';
+			position: absolute;
+			width: 22px;
+			height: 2px;
+			background: white;
+			box-shadow: 0 6px 0 white, 0 12px 0 white;
+			top: 11px;
+			right: 9px;
+        }
+        &:before {
+        }
+    }
+}
 
-	&:after {
-		// *INSERT SOME WICKED STYLES IN HERE FOR THE BURGER ICON*
+
+// Trigger Icon: Cross
+.widget.extendednavigation {
+	ul.open + a.pull {
+		top: 0;
+		@media @tablet {
+    	 	// Cross lines
+    	 	background: @color-swatch2;
+    	 	&:after, &:before {
+    	 		  box-shadow: none;
+    	 		  margin: 5px 0 0 -13px;
+    	 	}
+    	 	// Cross Line 1
+    	 	&:after {
+	            -webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+    	 	}
+    	 	// Cross Line 2
+    	 	&:before {
+    	 		display: block;
+	            -webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+    	 	}
+    	}
 	}
 }
+
 
 
 // The rest of the nav styles
@@ -419,7 +500,7 @@ div.widget.extendednavigation ul {
 	               	width: 0;
 	               	height: 0;
 	                border: 4px solid transparent;
-	                border-top-color: lighten(@color-swatch5, 15%);
+	                border-top-color: @color-swatch1;
 	                margin-right: 0.65em;
 	                margin-bottom: -1px;
 	            }
@@ -447,11 +528,11 @@ div.widget.extendednavigation ul {
 
 footer.template-footer {
 
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    height: auto;
-    width: 100%;
+	// position: absolute;
+ //    left: 0;
+ //    bottom: 0;
+ //    height: auto;
+ //    width: 100%;
 
 	padding: 4em 0 1.5em;
 	background-color: @color-swatch4;

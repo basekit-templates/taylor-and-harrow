@@ -128,19 +128,35 @@ blockquote p {
 		}
 	}
 
+	// Profile widgets
+
 	.widget.profile {
-	display: inline-block;
-	text-align: center;
-	border-right: 1px solid white;
-	padding: 2px 20px;
-	font-style: italic;
+		display: inline-block;
+		text-align: center;
+		border-right: 1px solid white;
+		padding: 2px 20px;
+		font-style: italic;
 
-	@media @mobile {
-		border-right: 0;
-	}
-
-	&:last-child {
+		@media @mobile {
 			border-right: 0;
+		}
+
+		&:last-child {
+				border-right: 0;
+			}
+
+		.bk-profile-socialicons {
+			margin: 0;
+			span a {
+				margin-bottom: 0;
+				height: 18px;
+			}
+		}
+
+		.form-group {
+			button.btn.btnText {
+				background-color: lighten(@color-swatch2,20%);
+			}
 		}
 	}
 

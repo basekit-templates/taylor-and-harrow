@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="59px" height="30px" viewBox="0 0 59 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2 + Path 1 + Triangle 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Path-2-+-Path-1-+-Triangle-2" sketch:type="MSLayerGroup" transform="translate(0.000000, -3.000000)">
+            <path d="M28.8549618,3.66666667 L35.2671756,9.16666667 L38.0152672,11.4583333 L28.3969466,19.7083333 L25.648855,12.375 L28.8549618,3.66666667 Z" id="Path-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M0,33 L28.8549618,3.66666667 L28.8549618,16.0416667 L40.7633588,3.66666667 L40.7633588,33 L0,33 Z" id="Path-1" fill="#282828" sketch:type="MSShapeGroup"></path>
+            <polygon id="Triangle-2" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(44.205835, 16.478595) rotate(-28.000000) translate(-44.205835, -16.478595) " points="47.176971 3.5490666 55.2078015 26.5095061 33.4153618 29.4488627 "></polygon>
+        </g>
+    </g>
+</svg>

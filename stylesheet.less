@@ -155,7 +155,12 @@ blockquote p {
 
 		.form-group {
 			button.btn.btnText {
-				background-color: lighten(@color-swatch2,20%);
+				border: 2px solid @color-swatch2;
+
+				&:hover {
+					background-color: lighten(@color-swatch2,20%);
+					color: @color-swatch1;
+				}
 			}
 		}
 	}

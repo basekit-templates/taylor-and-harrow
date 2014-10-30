@@ -47,8 +47,26 @@
 // #Page Settings
 // -----------------------------
 
+body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	min-height: 100vh;
+}
+
+.body-content {
+	flex: 1;
+}
+
 pre {
-white-space: normal;
+	white-space: normal;
 }
 
 // Wrapper
@@ -565,10 +583,6 @@ div.widget.extendednavigation ul {
 
 
 footer.template-footer {
-
-	position: absolute;
-    bottom: 0;
-    width: 100%;
 
 	padding: 4em 0 1.5em;
 	background-color: @color-swatch4;

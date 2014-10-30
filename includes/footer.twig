@@ -1,12 +1,12 @@
 <!-- Footer Include !-->
 <footer class="template-footer">
 
-	{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
-	{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+	{{widget('logo', 'footerlogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+	{{widget('footercompanyname', 'thisunqiuewidgetname', {"business": "profile"})|raw}}
 
 	<div class="profile-widgets">
-		{{widget('profile', 'profile-phone', { 'profileType':'phone', 'phone':'profile', 'refreshtime':'1800000'})|raw}}
-		{{widget('profile', 'profile-address', { 'profileType':'address', 'address':'profile', 'refreshtime':'1800000'})|raw}}
+		{{widget('profile', 'footer-profile-phone', { 'profileType':'phone', 'phone':'profile', 'refreshtime':'1800000'})|raw}}
+		{{widget('profile', 'footer-profile-address', { 'profileType':'address', 'address':'profile', 'refreshtime':'1800000'})|raw}}
 	</div>
 
 </footer>

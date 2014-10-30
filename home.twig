@@ -2,7 +2,10 @@
 {% block content %}
 
 <section class="page home">
-
+		<div class="company-info">
+					{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
+					{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+		</div>
 		{% include 'includes/header.twig' %}
 
 		<div class="wrapper">

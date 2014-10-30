@@ -263,52 +263,54 @@ section.default {
 // -----------------------------
 
 
-// Company Info
-
-.company-info {
-	position: absolute;
-	z-index: 9999;
-	width: 100%;
-	text-align: center;
-
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-
-	@media @mobile {
-		top: 30%;
-	}
-}
-
-
-// Logo
-
-.widget.logo, .widget.companyname {
-	vertical-align: middle;
-}
-
-.widget.logo {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.widget.companyname a {
-	font-swatch: @font-swatch10-font-size;
-	line-height: @font-swatch10-line-height;
-}
-
 .template-header {
 	.clearfix;
 	clear: both;
 	position: relative;
 	margin-bottom: 60px;
 
+}
 
-	// Header company name
+// Company Info
+
+	.company-info {
+		position: absolute;
+		z-index: 9999;
+		width: 100%;
+		text-align: center;
+
+		top: 170px;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+
+		@media @mobile {
+			top: 30%;
+		}
+
+	}
+
+
+	// Logo
+
+	.widget.logo, .widget.companyname {
+		vertical-align: middle;
+	}
+
+	.widget.logo {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.widget.companyname a {
+		font-swatch: @font-swatch10-font-size;
+		line-height: @font-swatch10-line-height;
+	}
+
+		// Header company name
 
 	.widget.companyname {
 		.clearfix;
@@ -316,8 +318,6 @@ section.default {
 			font-size: @font-swatch10-font-size;
 		}
 	}
-
-}
 
 
 
@@ -634,40 +634,20 @@ footer.template-footer {
 			&:last-child {
 					border-right: 0;
 				}
+
+			.form-group {
+				button.btn.btnText {
+					border: 2px solid @color-swatch1;
+					padding: 8px 21px;
+
+					&:hover {
+						background-color: lighten(@color-swatch2,20%);
+						color: @color-swatch1;
+					}
+				}
+			}
 		}
 	}
-
-	// .responsivecolumns columns-three-50-25-25 {
-	// 	margin-bottom: 10px;
-	// }
-
-	// .columns-three-right {
-	// 	.widget.profile {
-	// 		margin-right: 20px;
-	// 	}
-	// }
-
-
-	// Profile widget styles
-
-	// .widget.profile {
-	// 	.bk-profile-phone {
-	// 		&:before {
-	//         content: '';
-	//         background-image: image('/images/Phone.svg');
-	//         background-size: 20px;
-	//         background-repeat: no-repeat;
-	//         float: left;
-	//         width: 20px;
-	//         height: 20px;
-	//         padding-right: 8px;
-	//     	}
-	//     	@media @mobile {
-	// 	    	display: block;
-	// 			margin-top: 20px;
-	//     	}
-	// 	}
-	// }
 
 }
 

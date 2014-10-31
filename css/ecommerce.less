@@ -136,98 +136,80 @@
 
 
 
+// Product Filter
 // -----------------------------
-// #Product-Filter
-// -----------------------------
-
 
 // Shame CSS
 .widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
-	@media @mobile {
+    @media (max-width: 1060px) {
         margin-bottom: 0;
     }
 }
 
 .productlist-filter {
     .form-group {
-        display: inline-block;
         vertical-align: top;
         @media @mobile {
             width: 100%;
             margin-bottom: 0;
         }
     }
-
-
     // Label
-
     label {
-    	font-family: @font-swatch2-font-family;
-    	font-size: 14px;
+        display: block;
+        font-family: @font-swatch2-font-family;
+        font-size: 14px;
         color: @color-swatch4;
-		line-height: @font-swatch4-line-height;
-		font-weight: normal;
-		display: block;
+        line-height: @font-swatch4-line-height;
+        font-weight: normal;
     }
-
-
-	// Product Search
-
+    // Product Search
     .productlist-search {
-    	@media @mobile {
-        margin: 10px 0;
-        }
-        label {
-        	margin-bottom: 0;
-        }
+        margin-bottom: 20px;
         input {
-        	position: relative;
-        	max-width: 170px;
             height: 35px;
-            border: 1px solid @color-swatch2;
-        	background-color: @color-swatch1;
-        	-webkit-appearance: none;
+            margin-top: 2px;
+            border: 1px solid darken(@color-swatch1,10%);
+            background-color: darken(@color-swatch1,4%);
+            -webkit-appearance: none;
             -moz-appearance: none;
             -webkit-border-radius: 0;
-            @media @mobile {
+            @media @tablet {
                 width: 100%;
                 max-width: 100%;
-                margin-bottom: 12px;
             }
         }
         .btn {
-				position: relative;
-				margin: 0;
-				padding: 5px 14px;
-
-                &:hover {
-                    padding: 2px 14px;
-                }
-
-            @media @mobile {
-            	margin-bottom: 10px;
+            position: relative;
+            margin: 0;
+            padding: 4px 14px;
+            @media @tablet {
+                top: 0;
             }
         }
     }
 }
 
-
 // Item Count
-
 .productlist-item-count {
-	font-family: @font-swatch4-font-family;
-	font-size: 14px;
-	font-weight: @font-swatch4-font-weight;
-	line-height: @font-swatch4-line-height;
-	letter-spacing: @font-swatch4-letter-spacing;
-	color: @color-swatch5;
+    font-family: @font-swatch4-font-family;
+    font-size: 14px;
+    font-weight: @font-swatch4-font-weight;
+    line-height: @font-swatch4-line-height;
+    letter-spacing: @font-swatch4-letter-spacing;
+    color: @color-swatch5;
+    @media @tablet {
+        margin-top: 20px;
+    }
 }
+
 
 
 
 
 .widget.ecombasket {
     margin-bottom: 2em;
+    
 
 
     // Basket
@@ -753,8 +735,8 @@
 	// Add to Cart Button
 	.btn.ecom-product-add-to-cart-btn {
 	    &:hover {
-            padding: 8px 22px 8px;
-	    	background-color: @color-swatch2;
+            padding: 9px 22px 9px;
+	    	background-color: darken(@color-swatch2,10%);
             border: 3px solid darken(@color-swatch2,10%);
 
             & span.text {
@@ -782,8 +764,16 @@
 	}
 
 	.ecom-product-cattag {
-		margin: 4px 0 0;
+		margin: 20px 0 0;
 	}
+
+    a.store-category-link {
+        color: @color-swatch2;
+    }
+
+    a.ecom-product-tag-link {
+        color: @color-swatch2;
+    }
 
 
 	// Category Separation

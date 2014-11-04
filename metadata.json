@@ -55,7 +55,9 @@
     },
 
     "images":[
-        "images/feature-bg.jpg"
+        "images/feature-bg.jpg",
+        "images/icon-case.png",
+        "images/icon-scale.png"
     ],
     "fontSwatch": {
        "title": "Merriweather / Source Sans Pro / Cabin",

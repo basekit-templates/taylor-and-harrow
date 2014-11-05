@@ -1,0 +1,36 @@
+{% extends "layout.twig" %}
+{% block content %}
+
+<section class="page default">
+
+		<!-- Header Include !-->
+		<header class="template-header">
+
+			<div class="super-header">
+			{{widget('profile', 'profile-phone', { 'profileType':'phone', 'phone':'profile', 'refreshtime':'1800000'})|raw}}
+			{{widget('profile', 'profile-address', { 'profileType':'address', 'address':'profile', 'refreshtime':'1800000'})|raw}}
+			</div>
+
+			<div class="default-feature-wrapper">
+
+					<div class="company-info">
+							{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
+							{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+					</div>
+			</div>
+
+					{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+
+		</header>
+
+
+		<div class="wrapper-blog">
+			{{zone('main')|raw}}
+		</div>
+
+</section>
+
+	{% include 'includes/footer.twig' %}
+
+
+{% endblock %}

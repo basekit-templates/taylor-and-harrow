@@ -163,6 +163,11 @@
         line-height: @font-swatch4-line-height;
         font-weight: normal;
     }
+    select {
+        @media @tablet {
+            width: 100%;
+        }
+    }
     // Product Search
     .productlist-search {
         margin-bottom: 20px;
@@ -183,8 +188,9 @@
             position: relative;
             margin: 0;
             padding: 4px 14px;
+            border: 4px solid @color-swatch2;
             @media @tablet {
-                top: 0;
+                margin-top: 10px;
             }
         }
     }

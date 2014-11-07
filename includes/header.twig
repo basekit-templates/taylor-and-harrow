@@ -9,6 +9,10 @@
 	<div class="feature-wrapper">
 
 		{{widget('feature', 'feature', {"header": "profile", "strapline":"profile", "buttonText":"profile","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+		<div class="company-info">
+					{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+					{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+		</div>
 	</div>
 
 			{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}

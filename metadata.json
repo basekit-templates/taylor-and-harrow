@@ -81,7 +81,7 @@
             "font-family": "\"Crimson Text\", \"Times New Roman\", serif",
             "font-size": "24px",
             "font-weight": "400",
-            "line-height": "25px",
+            "line-height": "26px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },

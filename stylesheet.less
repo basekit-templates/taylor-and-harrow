@@ -334,34 +334,6 @@ section.pt {
 // -----------------------------
 
 
-// // Fix for hide feature widget
-
-// .widget.feature.bk-tpl-hidden + .feature-wrapper {
-// 	display: -webkit-flexbox;
-// 	display: -ms-flexbox;
-// 	display: -webkit-flex;
-// 	display: flex;
-// 	-webkit-flex-align: center;
-// 	-ms-flex-align: center;
-// 	-webkit-align-items: center;
-// 	align-items: center;
-// 	min-height: 300px;
-// 	background-color: @color-swatch2;
-// 	padding: 20px 0 40px 0;
-
-// 	.company-info {
-// 		position: relative;
-// 		top: inherit;
-// 		left: inherit;
-// 		transform: none;
-// 		-webkit-transform: none;
-// 		-moz-transform: none;
-// 		-o-transform: none;
-// 		-ms-transform: none;
-// 	}
-// }
-
-
 .template-header {
 	.clearfix;
 	clear: both;
@@ -369,30 +341,6 @@ section.pt {
 	margin-bottom: 60px;
 
 }
-
-// Company Info
-
-	// .company-info {
-	// 	position: absolute;
-	// 	z-index: 9999;
-	// 	width: 100%;
-	// 	text-align: center;
-	// 	background-color: @color-swatch2;
-	// 	padding: 20px 0;
-
-	// 	top: 170px;
-	// 	left: 50%;
-	// 	transform: translate(-50%,-50%);
-	// 	-webkit-transform: translate(-50%,-50%);
-	// 	-moz-transform: translate(-50%,-50%);
-	// 	-o-transform: translate(-50%,-50%);
-	// 	-ms-transform: translate(-50%,-50%);
-
-	// 	@media @mobile {
-	// 		top: 170px;
-	// 	}
-
-	// }
 
 	.widget.feature + .company-info {
 		position: absolute;
@@ -419,12 +367,13 @@ section.pt {
 		position: relative;
 		z-index: inherit;
 		width: inherit;
+		text-align: center;
 		background-color: @color-swatch2;
 		padding: 20px;
 
 		top: 0;
 		left: 0;
-		
+
 		transform: translate(0%, 0%);
 		-webkit-transform: translate(0%, 0%);
 		-moz-transform: translate(0%, 0%);

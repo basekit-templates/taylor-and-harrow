@@ -199,6 +199,14 @@ blockquote p {
 		color: @color-swatch1;
 		font-family: @font-swatch3-font-family;
 		font-style: italic;
+        padding-bottom: 0;
+            &:after {
+                content: "\002C";
+            }
+            &:last-child:after {
+                content: '';
+                margin-left: 0;
+            }
 		}
 	}
 
@@ -719,6 +727,14 @@ footer.template-footer {
 			color: @color-swatch1;
 			font-family: @font-swatch3-font-family;
 			font-style: italic;
+            padding-bottom: 0;
+                &:after {
+                    content: "\002C";
+                }
+                &:last-child:after {
+                    content: '';
+                    margin-left: 0;
+                }
 			}
 		}
 

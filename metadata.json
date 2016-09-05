@@ -1,66 +1,72 @@
 {
-	"name":"Taylor and Harrow",
-	"thumbnail":"taylor-and-harrow.png",
-	"screenshot":"taylor-and-harrow.png",
-    "tags": { "en": ["laywer", "clean", "corporate"] },
-    "pageTypes":["home"],
-    "templateType":"standard",
-    "colorSwatches":
-    {
+    "name": "Taylor and Harrow",
+    "thumbnail": "taylor-and-harrow.png",
+    "screenshot": "taylor-and-harrow-screenshot.jpg",
+    "tags": {
+        "en": [
+            "laywer",
+            "clean",
+            "corporate"
+        ]
+    },
+    "pageTypes": [
+        "home"
+    ],
+    "templateType": "standard",
+    "colorSwatches": {
         "Swatch 1": {
-            "color1":"#ffffff",
-            "color2":"#000000",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#ffffff",
-            "color7":"#000000"
+            "color1": "#ffffff",
+            "color2": "#000000",
+            "color3": "#000000",
+            "color4": "#000000",
+            "color5": "#000000",
+            "color6": "#ffffff",
+            "color7": "#000000"
         },
         "Swatch 2": {
-            "color1":"#ffffff",
-            "color2":"#449a88",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#ffffff",
-            "color7":"#000000"
+            "color1": "#ffffff",
+            "color2": "#449a88",
+            "color3": "#000000",
+            "color4": "#000000",
+            "color5": "#000000",
+            "color6": "#ffffff",
+            "color7": "#000000"
         },
         "Swatch 3": {
-            "color1":"#ffffff",
-            "color2":"#ec495f",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#ffffff",
-            "color7":"#000000"
+            "color1": "#ffffff",
+            "color2": "#ec495f",
+            "color3": "#000000",
+            "color4": "#000000",
+            "color5": "#000000",
+            "color6": "#ffffff",
+            "color7": "#000000"
         },
         "Swatch 4": {
-            "color1":"#ffffff",
-            "color2":"#2c9ab7",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#ffffff",
-            "color7":"#000000"
+            "color1": "#ffffff",
+            "color2": "#2c9ab7",
+            "color3": "#000000",
+            "color4": "#000000",
+            "color5": "#000000",
+            "color6": "#ffffff",
+            "color7": "#000000"
         },
         "Swatch 5": {
-            "color1":"#ffffff",
-            "color2":"#b88a0e",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#000000",
-            "color6":"#ffffff",
-            "color7":"#000000"
+            "color1": "#ffffff",
+            "color2": "#b88a0e",
+            "color3": "#000000",
+            "color4": "#000000",
+            "color5": "#000000",
+            "color6": "#ffffff",
+            "color7": "#000000"
         }
     },
-
-    "images":[
+    "images": [
         "images/feature-bg.jpg",
         "images/icon-case.png",
         "images/icon-scale.png"
     ],
     "fontSwatch": {
-       "title": "Merriweather / Source Sans Pro / Cabin",
+        "title": "Merriweather / Source Sans Pro / Cabin",
         "font1": {
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "24px",
@@ -111,7 +117,7 @@
             "color-hover": "@color-swatch2",
             "background-color": "@color-swatch7",
             "background-color-hover": "@color-swatch7"
-         },
+        },
         "font7": {
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "16px",
